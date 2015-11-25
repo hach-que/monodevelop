@@ -2005,7 +2005,7 @@ namespace MonoDevelop.Ide
 			monitor.EndTask ();
 		}
 		
-		internal static FilePath GetTargetCopyName (FilePath path, bool isFolder)
+		public static FilePath GetTargetCopyName (FilePath path, bool isFolder)
 		{
 			int n=1;
 			// First of all try to find an existing copy tag

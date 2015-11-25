@@ -209,7 +209,7 @@ namespace MonoDevelop.Ide.Gui
 
 		// If we get more than 1MB of debug info, we don't care. 99.999% of the time we're just doing
 		// the same thing over and over and we really don't want log files which are 100gb in size
-		static int RemainingBytes = 1 * 1024 * 1024;
+		static int RemainingBytes = 0;
 		static readonly string[] domains = new string[] {"Gtk", "Gdk", "GLib", "GLib-GObject", "Pango", "GdkPixbuf" };
 		static uint[] handles;
 		

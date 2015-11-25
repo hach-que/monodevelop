@@ -93,7 +93,7 @@ namespace MonoDevelop.Projects
 					return parentFolder.ParentSolution;
 				return parentSolution; 
 			}
-			internal set {
+			set {
 				if (parentSolution != null && parentSolution != value)
 					NotifyUnboundFromSolution (true);
 				parentSolution = value;

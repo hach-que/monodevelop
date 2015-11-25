@@ -211,6 +211,11 @@ namespace MonoDevelop.Projects
 			}
 		}
 
+		public virtual Project GetProjectForTypeSystem() {
+			// Normal MSBuild projects just use themselves for the type system.
+			return this;
+		}
+
 		public List<string> DefaultImports {
 			get {
 				if (defaultImports == null) {
